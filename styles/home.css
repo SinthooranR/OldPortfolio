@@ -1,0 +1,73 @@
+/* OVERALL STUFF */
+/* Resets default margins for browsers*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: wheat;
+}
+
+/* ABOUT STUFF */
+
+#aboutme{
+    padding-top: 200px ;
+}
+
+#mypic{
+    width: 300px;
+    object-fit: cover; 
+}
+
+/* CONTACT STUFF */
+
+#contact{
+    margin-top: 50px;
+} 
+
+
+/* NAVBAR STUFF */
+
+nav{
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    background-color: salmon;
+
+    display: grid;
+    text-align: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, calc(800px / 2));
+    grid-auto-rows: auto;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+}
+
+nav ul {
+    padding-top: 35px;
+}
+
+nav h1{ 
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:active{
+    color: white;
+}
+
+
+
+
