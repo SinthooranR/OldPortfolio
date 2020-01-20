@@ -18,7 +18,7 @@ body{
 }
 
 
-.wrapper {
+.project-grid{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(2, calc(800px / 2));
@@ -26,6 +26,23 @@ body{
     grid-auto-rows: minmax(100px, auto);
     margin-left: 100px;
 }
+
+.descOne{
+    margin-top: 85px;
+}
+
+.descTwo{
+    margin-top: 85px;
+}
+
+
+.descThree{
+    margin-top: 85px;
+}
+
+
+
+
 
 img{
     width: 300px;
