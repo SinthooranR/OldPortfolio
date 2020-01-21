@@ -8,6 +8,7 @@
 body{
     /* background-color: wheat; */
     background-color: #9EABBF;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -27,17 +28,33 @@ body{
     margin-left: 100px;
 }
 
-.descOne{
-    margin-top: 85px;
+.projOne{
+    padding-top: 30px;
 }
+
+
+.descOne{
+    margin-top: 115px;
+    font-size: 20px;
+}
+
+.projTwo{
+    padding-top: 30px;
+}
+
 
 .descTwo{
-    margin-top: 85px;
+    margin-top: 115px;
+    font-size: 20px;
 }
 
+.projThree{
+    padding-top: 30px;
+}
 
 .descThree{
-    margin-top: 85px;
+    margin-top: 115px;
+    font-size: 20px;
 }
 
 
