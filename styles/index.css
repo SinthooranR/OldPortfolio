@@ -5,9 +5,10 @@
     padding: 0;
 }
 
-body{
+body{   
     /* background-color: wheat;*/
-    background-color: #9EABBF;
+    /* background-color: #9EABBF;*/
+    background-color: #EFF7F6;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -15,7 +16,16 @@ body{
 
 #aboutme{
     padding-top: 200px ;
+    text-align: center;
 }
+
+#aboutmeDesc{
+    padding-top: 50px ;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 1rem;
+}
+
 
 #mypic{
     width: 300px;
@@ -26,7 +36,38 @@ body{
 
 #contact{
     margin-top: 50px;
+    padding-left: 40px;
 } 
+
+#contactDesc{
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 1rem;
+} 
+
+#contactList{
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, calc(800px / 2));
+    grid-auto-rows: auto;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 50px;
+    font-size: 2rem;
+    list-style: none;
+} 
+
+#contactList li a{
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
 
 
 /* NAVBAR STUFF */
