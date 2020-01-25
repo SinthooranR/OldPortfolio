@@ -212,6 +212,7 @@ footer #navbar li{
     font-size: 1.5rem;
     text-transform: uppercase;
     font-family: sans-serif;
+    padding-bottom: 20px;
 }
 
 footer #navbar a{

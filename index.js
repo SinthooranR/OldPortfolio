@@ -9,7 +9,7 @@ window.onload = () => {
         console.log(prevScrollpos, currentScrollPos);
         let navbar = document.getElementById("navbar");
         if (prevScrollpos > currentScrollPos || prevScrollpos == 0){
-            navbar.style.top = "92%";
+            navbar.style.top = "87.5%";
         } else {
             navbar.style.top = "100%";
         }
