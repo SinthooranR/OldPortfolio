@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="index.css">
 
     <!-- Additional Stuff for Design -->
     <script src="https://kit.fontawesome.com/7978875e79.js" crossorigin="anonymous"></script>
@@ -17,22 +17,23 @@
 
 <body>
     <!-- Navbar -->
-    <nav>
-        <h1>Sinthooran Ravinathan</h1>
-        <ul>
-            <li><a id="home" href="index.html">Home</a></li>
-            <li><a id="projects" href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <h1>Sinthooran Ravinathan</h1>
+            <h2>Computer Science</h2>
+        </nav>
+    </header>
 
     <!-- About Me -->
     <div id="aboutme">
         <h1>About Me </h1>
-        <img src="./images/me.jpg" alt="avatar" class="avatar" id="mypic">
+        <img src="./images/me.png" alt="avatar" class="avatar" id="mypic">
     </div>
 
+
     <div id="aboutmeDesc">
-        <p>I am currently a Fourth Year Computer Science student graduating in June 2020, and am interested to work in the
+        <p>I am currently a Fourth Year Computer Science student graduating in June 2020, and am interested to work in
+            the
             industry applying my
             knowledge in mainly mobile development, and web development.</p>
         <br>
@@ -41,31 +42,96 @@
             even learning Quality Assurance for deploying Software with the use of various tests.</p>
     </div>
 
-    <!-- Contact -->
-    <div>
-        <h1 id="contact">Contacts</h1>
-        <p id="contactDesc">These are links to look at some of the projects done and my LinkedIn to stay in contact with
-            me whenever needed.</p>
-        <ul id="contactList">
-            <li>
-                <i class="fab fa-bitbucket">
-                    <a href="https://bitbucket.org/%7B72a4ecc5-81d0-4f33-b49c-539b9b48eb5c%7D/ " target="_blank:">
-                        Bitbucket</a>
-                </i>
-            </li>
-            <li>
-                <i class="fab fa-github">
-                    <a href="https://github.com/SinthooranR/ " target="_blank:"> Github</a>
-                </i>
-            </li>
-            <li>
-                <i class="fab fa-linkedin">
-                    <a href="https://www.linkedin.com/in/sinthooran-ravinathan-7ab70b169/ " target="_blank:">
-                        LinkedIn</a>
-                </i>
-            </li>
-        </ul>
+    <!-- Project -->
+    <div id="project">
+        <a name="project"></a>
+        <h1>Projects</h1>
+        <p>These are the various projects I worked on and took part in during my time studying in UOIT Computer Science
+            Field</p>
     </div>
-</body>
 
+    <!-- Grid showing Projects and Descriptions -->
+    <div class="project-grid">
+        <div class="projOne">
+            <h1>Weather Owl</h1>
+            <img src="./images/WeatherOwl.jpg" alt="">
+        </div>
+        <div class="descOne">
+            <p>This project was done in the Mobile Devices Course in UOIT. The concept of the project involves
+                creating a useful mobile application that uses topics taught throughtout the course. Concepts involved
+                AsyncTasks, Databases with SQLite, Internet and GPS, basic event setups, and Front-end setup with the
+                scene builder provided by Android Studio</p>
+            <br>
+            <p>For this project, we used a variety of the concepts taught in class such as the SQLite Databases, GPS,
+                and also
+                made use of json parsing with the OpenWeatherMap API. The API has some limitations such as showing the
+                weather for
+                a few cities as it is the free version</p>
+        </div>
+
+        <div class="projTwo">
+            <h1>OpenGL GameCube</h1>
+            <img src="./images/gamecube.PNG" alt="">
+        </div>
+        <div class="descTwo">
+            <p>This project was done in the Computer Graphics and Visualization Course in UOIT. The Idea of the Project
+                was to
+                create a GameCube logo with OpenGL using squares made from triangular mesh geometry.
+            </p>
+            <br>
+            <p>The GameCube also was able to change
+                from a defualt purple color to a lighted version, and also a textured version when clicking a button.
+                The changes are done through the shader
+                High-level Shader language (HLSL), and OpenGL Shading Language (GLSL) files. Finally there are also some
+                ways to move and
+                rotate the cube using translations.
+            </p>
+        </div>
+        <div class="projThree">
+            <h1>OpenCV Project</h1>
+            <img src="./images/placeholder.png" alt="">
+        </div>
+        <div class="descThree">
+            Desc 3
+        </div>
+
+        <div class="projFour">
+            <h1>Web Development Project</h1>
+            <img src="./images/placeholder2.png" alt="">
+        </div>
+        <div class="descFour">
+            Desc 4
+        </div>
+    </div>
+
+
+    <!-- Footer Navbar -->
+    <footer>
+        <nav>
+            <h1 id="contact">Contacts</h1>
+            <ul id="contactList">
+                <li>
+                    <i class="fab fa-linkedin">
+                        <a href="https://www.linkedin.com/in/sinthooran-ravinathan-7ab70b169/ " target="_blank:"
+                            rel="noopener noreferrer">
+                            LinkedIn</a>
+                    </i>
+                </li>
+                <li>
+                    <i class="fab fa-github">
+                        <a href="https://github.com/SinthooranR/" target="_blank:" rel="noopener noreferrer"> Github</a>
+                    </i>
+                </li>
+                <li>
+                    <i class="fab fa-bitbucket">
+                        <a href="https://bitbucket.org/%7B72a4ecc5-81d0-4f33-b49c-539b9b48eb5c%7D/ " target="_blank:"
+                            rel="noopener noreferrer">
+                            Bitbucket</a>
+                    </i>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
 </html>
