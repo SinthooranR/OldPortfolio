@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+
 
     <!-- Additional Stuff for Design -->
     <script src="https://kit.fontawesome.com/7978875e79.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="shortcut icon" href="./images/atom.png" />
 
-    <title>My Website</title>
+    <title>Sinthooran Ravinathan</title>
 </head>
-
 <body>
     <!-- Navbar -->
     <header>
@@ -25,11 +27,11 @@
     </header>
 
     <!-- About Me -->
+    <hr>
     <div id="aboutme">
         <h1>About Me </h1>
         <img src="./images/me.png" alt="avatar" class="avatar" id="mypic">
     </div>
-
 
     <div id="aboutmeDesc">
         <p>I am currently a Fourth Year Computer Science student graduating in June 2020, and am interested to work in
@@ -41,6 +43,7 @@
             Science major at UOIT such as Algorithms, Databases, Machine Learning, Mobile Application Development, and
             even learning Quality Assurance for deploying Software with the use of various tests.</p>
     </div>
+    <hr id="divider">
 
     <!-- Project -->
     <div id="project">
@@ -104,10 +107,46 @@
         </div>
     </div>
 
+    <hr id="divider">
+
+    <!-- Project Ideas-->
+    <div id="projectIdea">
+        <a name="projectIdea"></a>
+        <h1>Project Ideas</h1>
+        <p>These are some Ideas of projects I have for the future to be worked on with peers</p>
+    </div>
+
+    <div class="projectIdea-grid">
+        <div class="projIdeaOne">
+            <h1>Budget Application</h1>
+            <img src="./images/budget.png" alt="" id="budget">
+        </div>
+        <div class="descIdeaOne">
+            <p>This Idea came up as a way to create an application to assist users living alone from being a student to
+                young adults renting out places. The intention is to allow users to set a budget within a certain time
+                frame, which they can use to monitor their spendings and
+                can log it over time. The App is designed to be implemented on both a Web Application and Mobile
+                Application</p>
+            <br>
+            <br>
+            <h2>It Uses the Following Software</h2>
+            <br>
+            <ul id="languages">
+                <li>Java</li>
+                <li>Maven</li>
+                <li>Xamarin for mobile development</li>
+                <li>Spring Framework</li>
+                <li>Bootstrap or Bulma CSS Frameworks</li>
+                <li>Heroku or Github for hosting</li>
+                <li>Postgres</li>
+                <li>ElephantSQL</li>
+            </ul>
+        </div>
+    </div>
 
     <!-- Footer Navbar -->
     <footer>
-        <nav>
+        <nav id="navbar">
             <h1 id="contact">Contacts</h1>
             <ul id="contactList">
                 <li>
@@ -134,4 +173,5 @@
     </footer>
 
 </body>
+
 </html>

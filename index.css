@@ -1,74 +1,24 @@
 /* OVERALL STUFF */
 /* Resets default margins for browsers*/
-* {
-    margin: 0;
-    padding: 0;
+
+*{
+    padding:0px;
+    margin:0px;
 }
+
+html, body{
+    width:100%; 
+    height:100%;
+ 
+  }
 
 body{   
-    /* background-color: wheat;*/
-    /* background-color: #9EABBF;*/
-    background-color: #EFF7F6;
-    font-family: 'Montserrat', sans-serif;
+    /* background-image: linear-gradient(to right, #D3CCE3, #E9E4F0); */
+    background-image: linear-gradient(to right, #9796f0, #fbc7d4);
+    /* font-family: 'Montserrat', sans-serif; */
+    /* background-image: linear-gradient(to right, #654ea3, #eaafc8); */
+
 }
-
-/* ABOUT STUFF */
-
-#aboutme{
-    padding-top: 20px ;
-    text-align: center;
-}
-
-#aboutmeDesc{
-    padding-top: 50px ;
-    text-align: left;
-    padding-left: 100px;
-    padding-right: 100px;
-    font-size: 1rem;
-}
-
-
-#mypic{
-    width: 300px;
-    object-fit: cover; 
-}
-
-/* CONTACT STUFF */
-
-#contact{
-    margin-top: 50px;
-    padding-left: 40px;
-} 
-
-#contactDesc{
-    padding-bottom: 10px;
-    text-align: left;
-    padding-left: 50px;
-    font-size: 1rem;
-} 
-
-#contactList{
-
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, calc(800px / 2));
-    grid-auto-rows: auto;
-    grid-auto-rows: minmax(100px, auto);
-    justify-content: center;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: left;
-    padding-left: 50px;
-    font-size: 2rem;
-    list-style: none;
-} 
-
-#contactList li a{
-    text-decoration: none;
-    font-family: sans-serif;
-}
-
 
 
 /* NAVBAR STUFF */
@@ -77,7 +27,7 @@ header nav{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: salmon;
+    /* background-image: linear-gradient(to right, #654ea3, #eaafc8); */
 
     display: grid;
     text-align: center;
@@ -93,7 +43,42 @@ header nav h2{
 }
 
 
+/* ABOUT STUFF */
+
+#aboutme{
+    padding-top: 20px ;
+    text-align: center;
+}
+
+#mypic{
+    width: 300px;
+    object-fit: cover; 
+}
+
+#aboutmeDesc{
+    padding-top: 50px ;
+    text-align: left;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 1rem;
+}
+
+hr{
+    background-color: black;
+    border: 0; border-top: 1px solid black;
+}
+
+#divider{
+    margin-top: 25px;
+}
+
+
 /* PROJECT STUFF */
+
+img{
+    width: 300px;
+    object-fit: cover;
+}
 
 #project{
     padding-top: 50px;
@@ -108,6 +93,7 @@ header nav h2{
     grid-auto-rows: auto;
     grid-auto-rows: minmax(100px, auto);
     margin-left: 100px;
+
 }
 
 .projOne{
@@ -149,53 +135,299 @@ header nav h2{
 }
 
 
-img{
-    width: 300px;
-    object-fit: cover;
+/* Project Ideas */
+
+#projectIdea{
+    padding-top: 50px;
+    padding-left: 100px;
+}
+
+
+.projectIdea-grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, calc(800px / 2));
+    grid-auto-rows: auto;
+    grid-auto-rows: minmax(100px, auto);
+    margin-left: 100px;
+    margin-bottom: 10%;
+
+}
+
+.projIdeaOne{
+    padding-top: 30px;
+}
+
+
+
+#budget{
+    padding-top: 20px;
+}
+
+
+.descIdeaOne{
+    margin-top: 115px;
+    font-size: 1rem;
+}
+
+.descIdeaOne ul li{
+    list-style: none;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    text-transform: uppercase;
 }
 
 
 /* Footer Navbar */
-
-footer nav{
+footer #navbar{
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: salmon;
+    background-image: linear-gradient(to right, #654ea3, #eaafc8);
+    position: fixed;
+    transition: all 0.5s ease-in-out;
 }
 
-footer nav #contactList{
+footer #navbar #contactList{
     display: grid;
     text-align: center;
     grid-gap: 10px;
     grid-template-columns: repeat(3, calc(800px / 2));
     grid-auto-rows: auto;
-    grid-auto-rows: minmax(0, auto);
-    justify-content: center;
-    
+    grid-auto-rows: minmax(100, auto);
+    justify-content: center;    
 }
 
-footer nav h1{
+footer #navbar #contact{
+    text-align: center;
+} 
+
+footer #navbar h1{
     text-align: center;
     font-size: 1.5rem;
 }
 
-footer nav ul {
-    padding-top: 35px;
-}
-
-footer nav li{
+footer #navbar li{
     display: inline-block;
-    margin-left: 30px;
     font-size: 1.5rem;
     text-transform: uppercase;
     font-family: sans-serif;
 }
 
-footer nav a{
+footer #navbar a{
     text-decoration: none;
 }
 
-footer nav a:active{
+footer #navbar a:active{
     color: white;
+}
+
+
+
+/* Mobile Orientations */
+
+/* For 1000 or more/less?? px */
+@media screen and (max-width: 1000px) {
+
+    header nav{
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    .project-grid{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, calc(800px / 2));
+        grid-auto-rows: auto;
+        grid-auto-rows: minmax(100px, auto);
+        margin-left: 100px;
+    
+    }
+
+    .projectIdea-grid{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, calc(800px / 2));
+        grid-auto-rows: auto;
+        grid-auto-rows: minmax(100px, auto);
+        margin-left: 100px;
+        margin-bottom: 10%;
+    
+    }
+
+    footer #navbar #contact{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    footer #navbar #contactList{
+        display: block;
+        text-align: center;
+        
+    }
+
+    footer #navbar li{
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        padding-left: 20px;
+    }
+}
+
+/* For 700 or more/less?? px */
+@media screen and (max-width: 700px) {
+
+    header nav{
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+  
+
+    .project-grid{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, calc(800px / 2));
+        grid-auto-rows: auto;
+        grid-auto-rows: minmax(100px, auto);
+        margin-left: 100px;
+    
+    }
+
+    .projectIdea-grid{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, calc(800px / 2));
+        grid-auto-rows: auto;
+        grid-auto-rows: minmax(100px, auto);
+        margin-left: 100px;
+        margin-bottom: 10%;
+    
+    }
+
+    footer #navbar #contact{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    footer #navbar #contactList{
+        display: block;
+        text-align: center;
+    }
+
+    footer #navbar li{
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        padding-left: 20px;
+    }
+}
+
+
+    @media screen and (max-width: 500px) {
+
+        header nav{
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+        
+      
+    
+        .project-grid{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(1, calc(800px / 2));
+            grid-auto-rows: auto;
+            grid-auto-rows: minmax(100px, auto);
+            margin-left: 100px;
+        
+        }
+    
+        .projectIdea-grid{
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(1, calc(800px / 2));
+            grid-auto-rows: auto;
+            grid-auto-rows: minmax(100px, auto);
+            margin-left: 100px;
+            margin-bottom: 10%;
+        
+        }
+    
+        footer #navbar #contact{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    
+        footer #navbar #contactList{
+            display: block;
+            text-align: center;
+        }
+    
+        footer #navbar li{
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            padding-left: 20px;
+        } 
+}
+
+@media screen and (max-width: 360px) {
+
+    header nav{
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+  
+
+    .project-grid{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, calc(800px / 2));
+        grid-auto-rows: auto;
+        grid-auto-rows: minmax(100px, auto);
+        margin-left: 100px;
+    
+    }
+
+    .projectIdea-grid{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1, calc(800px / 2));
+        grid-auto-rows: auto;
+        grid-auto-rows: minmax(100px, auto);
+        margin-left: 100px;
+        margin-bottom: 10%;
+    
+    }
+
+    footer #navbar #contact{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    footer #navbar #contactList{
+        display: block;
+        text-align: center;
+    }
+
+    footer #navbar li{
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        padding-left: 20px;
+    }
 }
