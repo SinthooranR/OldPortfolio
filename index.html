@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="index.js"></script>
-
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 
     <!-- Additional Stuff for Design -->
     <script src="https://kit.fontawesome.com/7978875e79.js" crossorigin="anonymous"></script>
@@ -17,13 +17,25 @@
 
     <title>Sinthooran Ravinathan</title>
 </head>
+
 <body>
-    <!-- Navbar -->
+
+    <nav id="navbar">
+        <h2>Navigation</h2>
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#projectIdea">Project Ideas</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Myself Stuff -->
     <header>
-        <nav>
+        <div id="myself">
             <h1>Sinthooran Ravinathan</h1>
             <h2>Computer Science</h2>
-        </nav>
+        </div>
     </header>
 
     <!-- About Me -->
@@ -34,14 +46,10 @@
     </div>
 
     <div id="aboutmeDesc">
-        <p>I am currently a Fourth Year Computer Science student graduating in June 2020, and am interested to work in
-            the
-            industry applying my
-            knowledge in mainly mobile development, and web development.</p>
+        <p>I am currently a Fourth Year Computer Science student graduating in June 2020, and am interested to work in the industry applying my knowledge in mainly mobile development, and web development.</p>
         <br>
-        <p> I have learned various topics throughout my four years in my Computer
-            Science major at UOIT such as Algorithms, Databases, Machine Learning, Mobile Application Development, and
-            even learning Quality Assurance for deploying Software with the use of various tests.</p>
+        <p> I have learned various topics throughout my four years in my Computer Science major at UOIT such as Algorithms, Databases, Machine Learning, Mobile Application Development, and even learning Quality Assurance for deploying Software with the use
+            of various tests.</p>
     </div>
     <hr id="divider">
 
@@ -49,8 +57,8 @@
     <div id="project">
         <a name="project"></a>
         <h1>Projects</h1>
-        <p>These are the various projects I worked on and took part in during my time studying in UOIT Computer Science
-            Field</p>
+        <p>These are the various projects I worked on and took part in during my time studying in UOIT Computer Science Field
+        </p>
     </div>
 
     <!-- Grid showing Projects and Descriptions -->
@@ -60,16 +68,11 @@
             <img src="./images/WeatherOwl.jpg" alt="">
         </div>
         <div class="descOne">
-            <p>This project was done in the Mobile Devices Course in UOIT. The concept of the project involves
-                creating a useful mobile application that uses topics taught throughtout the course. Concepts involved
-                AsyncTasks, Databases with SQLite, Internet and GPS, basic event setups, and Front-end setup with the
-                scene builder provided by Android Studio</p>
+            <p>This project was done in the Mobile Devices Course in UOIT. The concept of the project involves creating a useful mobile application that uses topics taught throughtout the course. Concepts involved AsyncTasks, Databases with SQLite, Internet
+                and GPS, basic event setups, and Front-end setup with the scene builder provided by Android Studio</p>
             <br>
-            <p>For this project, we used a variety of the concepts taught in class such as the SQLite Databases, GPS,
-                and also
-                made use of json parsing with the OpenWeatherMap API. The API has some limitations such as showing the
-                weather for
-                a few cities as it is the free version</p>
+            <p>For this project, we used a variety of the concepts taught in class such as the SQLite Databases, GPS, and also made use of json parsing with the OpenWeatherMap API. The API has some limitations such as showing the weather for a few cities
+                as it is the free version</p>
         </div>
 
         <div class="projTwo">
@@ -77,17 +80,11 @@
             <img src="./images/gamecube.PNG" alt="">
         </div>
         <div class="descTwo">
-            <p>This project was done in the Computer Graphics and Visualization Course in UOIT. The Idea of the Project
-                was to
-                create a GameCube logo with OpenGL using squares made from triangular mesh geometry.
+            <p>This project was done in the Computer Graphics and Visualization Course in UOIT. The Idea of the Project was to create a GameCube logo with OpenGL using squares made from triangular mesh geometry.
             </p>
             <br>
-            <p>The GameCube also was able to change
-                from a defualt purple color to a lighted version, and also a textured version when clicking a button.
-                The changes are done through the shader
-                High-level Shader language (HLSL), and OpenGL Shading Language (GLSL) files. Finally there are also some
-                ways to move and
-                rotate the cube using translations.
+            <p>The GameCube also was able to change from a defualt purple color to a lighted version, and also a textured version when clicking a button. The changes are done through the shader High-level Shader language (HLSL), and OpenGL Shading Language
+                (GLSL) files. Finally there are also some ways to move and rotate the cube using translations.
             </p>
         </div>
         <div class="projThree">
@@ -122,11 +119,9 @@
             <img src="./images/budget.png" alt="" id="budget">
         </div>
         <div class="descIdeaOne">
-            <p>This Idea came up as a way to create an application to assist users living alone from being a student to
-                young adults renting out places. The intention is to allow users to set a budget within a certain time
-                frame, which they can use to monitor their spendings and
-                can log it over time. The App is designed to be implemented on both a Web Application and Mobile
-                Application</p>
+            <p>This Idea came up as a way to create an application to assist users living alone from being a student to young adults renting out places. The intention is to allow users to set a budget within a certain time frame, which they can use to monitor
+                their spendings and can log it over time. The App is designed to be implemented on both a Web Application and Mobile Application
+            </p>
             <br>
             <br>
             <h2>It Uses the Following Software</h2>
@@ -144,9 +139,11 @@
         </div>
     </div>
 
-    <!-- Footer Navbar -->
+    <hr>
+
+    <!-- Footer for Contacts -->
     <footer>
-        <nav id="navbar">
+        <div id="contactsFooter">
             <h1 id="contact">Contacts</h1>
             <ul id="contactList">
                 <li>
@@ -169,7 +166,7 @@
                     </i>
                 </li>
             </ul>
-        </nav>
+        </div>
     </footer>
 
 </body>

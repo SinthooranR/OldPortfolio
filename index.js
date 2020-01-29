@@ -2,17 +2,12 @@
 //Main Source: W3schools
 var prevScrollpos = window.pageYOffset;
 
-window.onload = () => {
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        console.log(prevScrollpos, currentScrollPos);
-        let navbar = document.getElementById("navbar");
-        if (prevScrollpos > currentScrollPos || prevScrollpos == 0){
-            navbar.style.top = "87.5%";
-        } else {
-            navbar.style.top = "100%";
-        }
-        prevScrollpos = currentScrollPos;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+    } else {
+        document.getElementById("navbar").style.top = "-110px";
     }
+    prevScrollpos = currentScrollPos;
 }
