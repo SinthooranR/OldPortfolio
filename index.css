@@ -57,14 +57,12 @@
         #navbar li a {
             text-decoration: none;
         }
+
         /* My Header */
         
-        header {
-            margin-top: 40px;
-        }
-        
         header #myself {
-            margin-top: 10%;
+            /* margin-top: 200px; */
+            margin-top: 125px;
             width: 100%;
             /* background-image: linear-gradient(to right, #654ea3, #eaafc8); */
             display: grid;
